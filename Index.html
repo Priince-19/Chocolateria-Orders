@@ -2644,7 +2644,7 @@ function downloadBillPDF(order) {
     doc.setFont("helvetica", "normal");
     doc.setFontSize(9);
     doc.setTextColor(110, 100, 85);
-    doc.text("Thank you for ordering from " + SHOP_NAME + "! This is a computer-generated bill.", marginX, y);
+    doc.text("Thank you for ordering from " + SHOP_NAME + "! This is order bill.", marginX, y);
 
     doc.save(`${order.id}-bill.pdf`);
   } catch (err) {
